@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Checklist</title>
+    </head>
+    <body>
+        <form 
+        method="post"
+        action="https://script.google.com/macros/s/AKfycbxdKg5cdBJkuAx5_BWcFCMP7R5eS3T2If8HjnUfB7zSuV4NjctdMkrockDnwMSHZpc3Rw/exec">
+            <div>
+                <input name="maquina" type=text" placeholder="Código da máquina" required>
+                <input name="operador" type="number" placeholder="Código Operador" required>
+            </div>
+            <div>
+                Checklist
+                <div> Óleo de motor está acima do nível?
+                    <input type="radio" name="oleomotor" value="Sim">Sim</input>
+                    <input type="radio" name="oleomotor" value="Não">Não</input>
+                </div>
+                <div> Óleo do sistema hidráulico está acima do nível?
+                    <input type="radio" name="oleohidraulico" value="Sim">Sim</input>
+                    <input type="radio" name="oleohidraulico" value="Não">Não</input>
+                </div>
+                <div> Líquido de arrefecimento está acima do nível?
+                    <input type="radio" name="arrefecimento" value="Sim">Sim</input>
+                    <input type="radio" name="arrefecimento" value="Não">Não</input>
+                </div>
+                <div> O radiador está limpo?
+                    <input type="radio" name="radiador" value="Sim">Sim</input>
+                    <input type="radio" name="radiador" value="Não">Não</input>
+                </div>
+                <div> As baterias estão seguras, com fixação correta?
+                    <input type="radio" name="bateria" value="Sim">Sim</input>
+                    <input type="radio" name="bateria" value="Não">Não</input>
+                </div>
+                <div> A correia do motor está tensionada e em condições de uso?
+                    <input type="radio" name="correiamotor" value="Sim">Sim</input>
+                    <input type="radio" name="correiamotor" value="Não">Não</input>
+                </div>
+                <div> A correia do ar-condicionado está tensionada e em condições de uso?
+                    <input type="radio" name="correiaarcondicionado" value="Sim">Sim</input>
+                    <input type="radio" name="correiaarcondicionado" value="Não">Não</input>
+                </div>
+                <div> Os pneus estão com marcas de desgaste ou calibração inadequada?
+                    <input type="radio" name="pneus" value="Sim">Sim</input>
+                    <input type="radio" name="pneus" value="Não">Não</input>
+                </div>
+                <div> As esteiras estão bem tensionadas?
+                    <input type="radio" name="esteiras" value="Sim">Sim</input>
+                    <input type="radio" name="esteiras" value="Não">Não</input>
+                </div>
+            </div>
+            Etiqueta de Manutenção
+            <div>
+                <div>Selecione o compartimento:
+                    <select name="compartimento" id="compartimento">
+                        <option value="Motor">Motor</option>
+                        <option value="Arcondicionado">Ar-Condicionado</option>
+                        <option value="Cabine">Cabine</option>
+                    </select>
+                    <div>Descreva o problema:
+                        <input type="text" name="problema"></input>
+                    </div>
+                </div>
+                <div>Selecione o compartimento:
+                    <input type="checkbox" id="arcondicionadocheck" name="arcondicionadocheck" value="arcondiconadocheck">Ar-condicionado</input>
+                    <div>Descreva o problema:
+                        <input type="text" name="arcondicionadoproblema"></input>
+                        <input type="file" name="arcondicionadoimage" accept="image/" capture="environment">
+                    </div>
+                    <input type="checkbox" id="motorcheck" name="motorcheck" value="motorcheck">Motor</input>
+                    <div>Descreva o problema:
+                        <input type="text" name="motorproblema"></input>
+                        <input type="file" name="motorimage" accept="image/" capture="environment">
+                    </div>
+                </div>
+            </div>
+                <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
